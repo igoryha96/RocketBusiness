@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>RocketBusiness</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header" data-test="header">
+    <h1 class="visually-hidden">RocketBusiness</h1>
+  </header>
+
+  <main class="main">
+    <section class="main__video-box video-box wrapper">
+      <h2 class="visually-hidden">Видео-плеер</h2>
+      <div class="video-box__prev" id="vidwrap"
+        style="height:517px;width: 1200px;background: white url('images/header/desk/prev@1x.jpg') no-repeat center; overflow:hidden;">
+
+        <button class="video-box__button-play" type="button" onclick="play();">
+          <span class="visually-hidden">Кнопка запуска видео</span>
+
+          <picture class="video-box__button-img">
+            <img class="video-box__button-pic" src="images/header/desk/button-play@1x.png"
+              srcset="images/header/desk/button-play@2x.png 2x" width="193" height="33" alt="Кнопка запуска видео">
+          </picture>
+
+        </button>
+      </div>
+    </section>
+
+    <section class="main__catalog catalog wrapper">
+      <h2 class="visually-hidden">
+        Каталог товаров для заказа
+      </h2>
+
+      <div class="embla">
+        <div class="embla__container">
+          <div class="embla__slide">Slide 1</div>
+          <div class="embla__slide">Slide 2</div>
+          <div class="embla__slide">Slide 3</div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+  </main>
+  <footer data-test="footer"></footer>
+
+  <script type="text/javascript">
+    function play() {
+      document.getElementById('vidwrap').innerHTML = '<iframe width="1200" height="517" src="https://www.youtube.com/embed/QSrvL8VU3fE?si=XJpfY9Br2UaBOm_J&amp&autoplay=1" allowfullscreen frameborder="0" allow="autoplay; encrypted-media"</iframe>'
+    }
+
+  </script>
+</body>
+
 </html>

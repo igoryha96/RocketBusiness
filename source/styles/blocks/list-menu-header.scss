@@ -1,0 +1,62 @@
+.list-menu-header {
+  display: flex;
+  gap: 44px;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  @include mediaTab {
+    width: 120px;
+  }
+  li {
+    width: 60px;
+  }
+  @include mediaTab {
+    li:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+// .list-menu-header__link-user
+.list-menu-header__link-user {
+  &::before {
+    content: "";
+    width: 16x;
+    height: 16px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: block;
+    background: #444444;
+    mask-image: url("../../icons/mobile/header/user.svg");
+  }
+}
+
+// .list-menu-header__link-union
+
+.list-menu-header__link-union {
+  &::before {
+    content: "";
+    width: 16x;
+    height: 16px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: block;
+    background: #444444;
+    mask-image: url("../../icons/mobile/header/Union.svg");
+  }
+}
+
+// .list-menu-header__link-menu
+
+.list-menu-header__link-menu {
+  &::before {
+    content: "";
+    width: 16x;
+    height: 16px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: block;
+    background: #444444;
+    mask-image: url("../../icons/mobile/header/Menu.svg");
+  }
+}
