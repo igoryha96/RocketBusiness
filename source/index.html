@@ -8,6 +8,7 @@
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <script src="vendor/embla.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -18,8 +19,18 @@
   <main class="main">
     <section class="main__video-box video-box wrapper">
       <h2 class="visually-hidden">Видео-плеер</h2>
-      <div class="video-box__prev" id="vidwrap"
-        style="height:517px;width: 1200px;background: white url('images/header/desk/prev@1x.jpg') no-repeat center; overflow:hidden;">
+      <div class="video-box__prev" id="vidwrap">
+
+        <picture class="video-box__button-img">
+          <source width="1200" height="517" type="image/webp" media="(min-width: 1440px)"
+            srcset="images/header/desk/desk-prev@1x.webp, images/header/desk/desk-prev@2x.webp 2x">
+          <source width="784" height="337" type="image/webp" media="(min-width: 1024px)"
+            srcset="images/header/desk/tab-prev@1x.webp, images/header/desk/tab-prev@2x.webp 2x">
+
+          <img class="video-box__button-pic" src="images/header/desk/mob-prev@1x.webp"
+            srcset="images/header/desk/mob-prev@2x.webp 2x" width="328" height="204" alt="Кнопка запуска видео">
+        </picture>
+
 
         <button class="video-box__button-play" type="button" onclick="play();">
           <span class="visually-hidden">Кнопка запуска видео</span>
@@ -38,6 +49,60 @@
         Каталог товаров для заказа
       </h2>
 
+      <div class="catalog__card card-catalog card-catalog--big">
+
+        <picture class="video-box__button-img">
+          <source width="387" height="328" type="image/webp" media="(min-width: 1440px)"
+            srcset="images/catalog/desk/big-card@1x.webp, images/catalog/desk/big-card@2x.webp 2x">
+          <source width="382" height="328" type="image/webp" media="(min-width: 1024px)"
+            srcset="images/catalog/tab/tab-big-card@1x.webp, images/catalog/tab/tab-big-card@2x.webp 2x">
+
+          <img class="video-box__button-pic" src="images/catalog/mob/mob-big-card@1x.webp"
+            srcset="images/catalog/mob/mob-big-card@1x.webp 2x" width="328" height="328" alt="Кнопка запуска видео">
+        </picture>
+
+        <div class="card-catalog__wrap-title">
+          <h3 class="card-catalog__title">Горох в стручках, 1 кг</h3>
+
+          <div class="card-catalog__like-box">
+            <div class="card-catalog__like">
+              <span class="visually-hidden">Добавить в избранное</span>
+            </div>
+
+            <div class="card-catalog__watch">
+              <span class="visually-hidden">Просмотрено</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-catalog__wrap-price">
+          <div class="card-catalog__sale-day">
+            <span class="visually-hidden">
+              Скидка
+            </span>
+            -31%
+          </div>
+
+          <div class="card-catalog__day-product day-product">
+            <span>
+              Товар дня
+            </span>
+
+            <span class="catalog__card__price">
+              570 ₽
+            </span>
+
+            <button class="card-catalog__buttoon button" type="button">
+              Оставить заявку
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
       <div class="embla">
         <div class="embla__container">
           <div class="embla__slide">Slide 1</div>
@@ -45,6 +110,11 @@
           <div class="embla__slide">Slide 3</div>
         </div>
       </div>
+
+
+
+
+
 
 
 
@@ -59,6 +129,7 @@
     }
 
   </script>
+
 </body>
 
 </html>
