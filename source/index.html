@@ -7,8 +7,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
   <script src="scripts/index.js" defer></script>
-  <script src="vendor/embla.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -17,99 +21,317 @@
   </header>
 
   <main class="main">
-    <section class="main__video-box video-box wrapper">
-      <h2 class="visually-hidden">Видео-плеер</h2>
-      <div class="video-box__prev" id="vidwrap">
-
-        <picture class="video-box__button-img">
-          <source width="1200" height="517" type="image/webp" media="(min-width: 1440px)"
-            srcset="images/header/desk/desk-prev@1x.webp, images/header/desk/desk-prev@2x.webp 2x">
-          <source width="784" height="337" type="image/webp" media="(min-width: 1024px)"
-            srcset="images/header/desk/tab-prev@1x.webp, images/header/desk/tab-prev@2x.webp 2x">
-
-          <img class="video-box__button-pic" src="images/header/desk/mob-prev@1x.webp"
-            srcset="images/header/desk/mob-prev@2x.webp 2x" width="328" height="204" alt="Кнопка запуска видео">
-        </picture>
-
-
-        <button class="video-box__button-play" type="button" onclick="play();">
-          <span class="visually-hidden">Кнопка запуска видео</span>
+    <section class="main__video-box video-box">
+      <div class="video-box__ container wrapper">
+        <h2 class="visually-hidden">Видео-плеер</h2>
+        <div class="video-box__prev" id="vidwrap">
 
           <picture class="video-box__button-img">
-            <img class="video-box__button-pic" src="images/header/desk/button-play@1x.png"
-              srcset="images/header/desk/button-play@2x.png 2x" width="193" height="33" alt="Кнопка запуска видео">
+            <source width="1200" height="517" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/header/desk/desk-prev@1x.webp, images/header/desk/desk-prev@2x.webp 2x">
+            <source width="784" height="337" type="image/webp" media="(min-width: 1024px)"
+              srcset="images/header/desk/tab-prev@1x.webp, images/header/desk/tab-prev@2x.webp 2x">
+
+            <img class="video-box__button-pic" src="images/header/desk/mob-prev@1x.webp"
+              srcset="images/header/desk/mob-prev@2x.webp 2x" width="328" height="204" alt="Кнопка запуска видео">
           </picture>
 
-        </button>
+
+          <button class="video-box__button-play" type="button" onclick="play();">
+            <span class="visually-hidden">Кнопка запуска видео</span>
+
+            <picture class="video-box__button-img">
+              <img class="video-box__button-pic" src="images/header/desk/button-play@1x.png"
+                srcset="images/header/desk/button-play@2x.png 2x" width="193" height="33" alt="Кнопка запуска видео">
+            </picture>
+
+          </button>
+        </div>
       </div>
     </section>
 
-    <section class="main__catalog catalog wrapper">
-      <h2 class="visually-hidden">
-        Каталог товаров для заказа
-      </h2>
+    <section class="main__catalog catalog">
+      <div class="catalog__container wrapper">
+        <h2 class="visually-hidden">
+          Каталог товаров для заказа
+        </h2>
 
-      <div class="catalog__card card-catalog card-catalog--big">
+        <div class="catalog__big-cards big-cards">
+          <div class="big-cards__container">
+            <div class="big-cards_card">
+              <picture class="big-cards__picture">
+                <source width="387" height="328" type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/catalog/desk/big-card@1x.webp, images/catalog/desk/big-card@2x.webp 2x">
+                <source width="382" height="328" type="image/webp" media="(min-width: 1024px)"
+                  srcset="images/catalog/tab/tab-big-card@1x.webp, images/catalog/tab/tab-big-card@2x.webp 2x">
 
-        <picture class="video-box__button-img">
-          <source width="387" height="328" type="image/webp" media="(min-width: 1440px)"
-            srcset="images/catalog/desk/big-card@1x.webp, images/catalog/desk/big-card@2x.webp 2x">
-          <source width="382" height="328" type="image/webp" media="(min-width: 1024px)"
-            srcset="images/catalog/tab/tab-big-card@1x.webp, images/catalog/tab/tab-big-card@2x.webp 2x">
+                <img class="big-cards__pic" src="images/catalog/mob/mob-big-card@1x.webp"
+                  srcset="images/catalog/mob/mob-big-card@1x.webp 2x" width="328" height="328"
+                  alt="Кнопка запуска видео">
+              </picture>
 
-          <img class="video-box__button-pic" src="images/catalog/mob/mob-big-card@1x.webp"
-            srcset="images/catalog/mob/mob-big-card@1x.webp 2x" width="328" height="328" alt="Кнопка запуска видео">
-        </picture>
+              <div class="big-cards__title-wrap">
+                <h3 class="big-cards__title">Горох в стручках, 1 кг</h3>
 
-        <div class="card-catalog__wrap-title">
-          <h3 class="card-catalog__title">Горох в стручках, 1 кг</h3>
+                <div class="big-cards__like-box">
+                  <div class="big-cards__like">
+                    <span class="visually-hidden like">Добавить в избранное</span>
+                  </div>
 
-          <div class="card-catalog__like-box">
-            <div class="card-catalog__like">
-              <span class="visually-hidden">Добавить в избранное</span>
+                  <div class="big-cards__watch eye">
+                    <span class="visually-hidden">Просмотрено</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="big-cards__wrap-price">
+                <div class="big-cards__baner banner banner--sail-day">
+                  <span class="visually-hidden">
+                    Скидка
+                  </span>
+                  -29%
+                </div>
+
+                <div class="big-cards__baner banner banner--day-product">
+                  <span>
+                    Товар дня
+                  </span>
+
+                  <span class="catalog__card__price">
+                    570 ₽
+                  </span>
+
+                  <button class="big-cards__buttoon button" type="button">
+                    Оставить заявку
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__middle-cards middle-cards">
+          <div class="middle-cards__container">
+
+            <div class="middle-cards__card">
+              <picture class="middle-cards__picture">
+                <source width="387" height="154" type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/catalog/desk/midle-card2@1x.webp, images/catalog/desk/midle-card1@2x.webp 2x">
+
+                <source width="382" height="154" type="image/webp" media="(min-width: 1024px)"
+                  srcset="images/catalog/tab/tab-midl-card1@1x.webp, images/catalog/tab/tab-midl-card1@2x.webp 2x">
+
+                <img class="middle-cards__pic" src="images/catalog/mob/mob-midle-card1@1x.webp"
+                  srcset="images/catalog/mob/mob-midle-card1@2x.webp 2x" width="328" height="175"
+                  alt="Кнопка запуска видео">
+              </picture>
+
+              <div class="middle-cards__title-wrap">
+                <h3 class="middle-cards__title">Голубика лесная, 200 г</h3>
+
+                <div class="middle-cards__like-box">
+                  <div class="middle-cards__like">
+                    <span class="visually-hidden like">Добавить в избранное</span>
+                  </div>
+
+                  <div class="middle-cards__watch">
+                    <span class="visually-hidden eye">Просмотрено</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="middle-cards__wrap-price">
+                <div class="middle-cards__baner banner banner--sale-sale">
+                  <span class="visually-hidden">
+                    Скидка
+                  </span>
+                  -31%
+                </div>
+
+                <div class="middle-cards__baner banner banner--sail">
+                  <span>
+                    Распродажа
+                  </span>
+
+                  <span class="catalog__card__price">
+                    570 ₽
+                  </span>
+
+                  <button class="middle-cards__buttoon button" type="button">
+                    Оставить заявку
+                  </button>
+
+                </div>
+              </div>
             </div>
 
-            <div class="card-catalog__watch">
-              <span class="visually-hidden">Просмотрено</span>
+            <div class="middle-cards_card">
+              <picture class="middle-cards__picture">
+                <source width="387" height="154" type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/catalog/desk/midle-card2@1x.webp, images/catalog/desk/midle-card2@2x.webp 2x">
+
+                <source width="382" height="154" type="image/webp" media="(min-width: 1024px)"
+                  srcset="images/catalog/tab/tab-midl-card2@1x.webp, images/catalog/tab/tab-midl-card2@2x.webp 2x">
+
+                <img class="middle-cards__pic" src="images/catalog/mob/mob-midle-card2@1x.webp"
+                  srcset="images/catalog/mob/mob-midle-card2@2x.webp 2x" width="328" height="175"
+                  alt="Кнопка запуска видео">
+              </picture>
+
+              <div class="middle-cards__title-wrap">
+                <h3 class="middle-cards__title">Морковь мытая, 1 кг г</h3>
+
+                <div class="middle-cards__like-box">
+                  <div class="middle-cards__like">
+                    <span class="visually-hidden like">Добавить в избранное</span>
+                  </div>
+
+                  <div class="middle-cards__watch">
+                    <span class="visually-hidden eye">Просмотрено</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="middle-cards__wrap-price">
+
+                <div class="middle-cards__baner banner banner--hit">
+                  <span>
+                    Распродажа
+                  </span>
+
+                  <span class="catalog__card__price">
+                    570 ₽
+                  </span>
+
+                  <button class="middle-cards__buttoon button" type="button">
+                    Оставить заявку
+                  </button>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card-catalog__wrap-price">
-          <div class="card-catalog__sale-day">
-            <span class="visually-hidden">
-              Скидка
-            </span>
-            -31%
+        <div class="catalog__small-cards small-card">
+          <div class="small-card__container">
+
+
+            <div class="swiper mySwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="small-card__card ">
+                    <div class="small-card__wrap-banner">
+                      <div class="small-card__banner-container">
+                        <span class="small-card__banner banner banner--day-product">
+                          Товар дня
+                        </span>
+                        <span class="small-card__banner banner banner--sail-day">
+                          -29%
+                        </span>
+
+                        <div class="small-card__like-box">
+                          <div class="small-card__like">
+                            <span class="visually-hidden like">Добавить в избранное</span>
+                          </div>
+
+                          <div class="small-card__watch">
+                            <span class="visually-hidden eye">Просмотрено</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <picture class="small-card__picture">
+                      <source width="184" height="183" type="image/webp" media="(min-width: 1440px)"
+                        srcset="images/catalog/desk/small-card1@1x.webp, images/catalog/desk/small-card1@2x.webp 2x">
+
+                      <source width="181" height="181" type="image/webp" media="(min-width: 1024px)"
+                        srcset="images/catalog/tab/tab-small-card1@1x.webp, images/catalog/tab/tab-small-card1@1x.webp 2x">
+
+                      <img class="small-card__pic" src="images/catalog/mob/mob-small-card1@1x.webp"
+                        srcset="images/catalog/mob/mob-small-card1@2x.webp 2x" width="230" height="230"
+                        alt="Попкорн солёный">
+                    </picture>
+
+                    <h3 class="small-card__title">
+                      Попкорн солёный,для СВЧ-печи, 120 г
+                    </h3>
+
+                    <p class="small-card__prise">
+                      160 ₽
+                    </p>
+
+                    <button class="small-cards__buttoon button" type="button">
+                      Оставить заявку
+                    </button>
+                  </div>
+
+                </div>
+                <div class="swiper-slide">
+                  <div class="small-card__card ">
+                    <div class="small-card__wrap-banner">
+                      <div class="small-card__banner-container">
+                        <span class="small-card__banner banner banner--day-product">
+                          Товар дня
+                        </span>
+                        <span class="small-card__banner banner banner--sail-day">
+                          -29%
+                        </span>
+
+                        <div class="small-card__like-box">
+                          <div class="small-card__like">
+                            <span class="visually-hidden like">Добавить в избранное</span>
+                          </div>
+
+                          <div class="small-card__watch">
+                            <span class="visually-hidden eye">Просмотрено</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <picture class="small-card__picture">
+                      <source width="184" height="183" type="image/webp" media="(min-width: 1440px)"
+                        srcset="images/catalog/desk/small-card2@1x.webp, images/catalog/desk/small-card2@2x.webp 2x">
+
+                      <source width="181" height="181" type="image/webp" media="(min-width: 1024px)"
+                        srcset="images/catalog/tab/tab-small-card2@1x.webp, images/catalog/tab/tab-small-card2@1x.webp 2x">
+
+                      <img class="small-card__pic" src="images/catalog/mob/mob-small-card2@1x.webp"
+                        srcset="images/catalog/mob/mob-small-card2@2x.webp 2x" width="230" height="230"
+                        alt="Попкорн солёный">
+                    </picture>
+
+                    <h3 class="small-card__title">
+                      Попкорн солёный,для СВЧ-печи, 120 г
+                    </h3>
+
+                    <p class="small-card__prise">
+                      160 ₽
+                    </p>
+
+                    <button class="small-cards__buttoon button" type="button">
+                      Оставить заявку
+                    </button>
+                  </div>
+
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+
+            </div>
           </div>
 
-          <div class="card-catalog__day-product day-product">
-            <span>
-              Товар дня
-            </span>
 
-            <span class="catalog__card__price">
-              570 ₽
-            </span>
 
-            <button class="card-catalog__buttoon button" type="button">
-              Оставить заявку
-            </button>
-
-          </div>
         </div>
-      </div>
-
-
-
-
-      <div class="embla">
-        <div class="embla__container">
-          <div class="embla__slide">Slide 1</div>
-          <div class="embla__slide">Slide 2</div>
-          <div class="embla__slide">Slide 3</div>
-        </div>
-      </div>
 
 
 

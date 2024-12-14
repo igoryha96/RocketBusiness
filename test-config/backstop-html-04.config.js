@@ -4,7 +4,7 @@
 * */
 
 export default {
-  "id": "drink2go form",
+  "id": RocketBusinness form",
   "viewports": [
     {
       "label": "desktop",

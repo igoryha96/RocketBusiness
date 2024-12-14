@@ -19,19 +19,19 @@
 */
 
 export default {
-  "id": "drink2go test-03",
-  "viewports": [
-    {
-      "label": "desktop",
-      "width": 1280,
-      "height": 800,
-    }
-  ],
+  "id": RocketBusinness test- 03",
+"viewports": [
+  {
+    "label": "desktop",
+    "width": 1280,
+    "height": 800,
+  }
+],
   "resembleOutputOptions": {
-    "ignoreAntialiasing": true,
+  "ignoreAntialiasing": true,
     "usePreciseMatching": false
-  },
-  "onReadyScript": "onReady.js",
+},
+"onReadyScript": "onReady.js",
   "scenarios": [
     {
       "label": "index TEST-03. wide Размеры страницы. Широкий экран",
@@ -124,21 +124,21 @@ export default {
       requireSameDimensions: false,
     },
   ],
-  fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
-  "paths": {
-    "bitmaps_reference": "backstop_data/bitmaps_reference/test-03",
+    fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
+      "paths": {
+  "bitmaps_reference": "backstop_data/bitmaps_reference/test-03",
     "bitmaps_test": "backstop_data/bitmaps_test",
-    "engine_scripts": "engine_scripts",
-    "html_report": "backstop_data/html_report",
+      "engine_scripts": "engine_scripts",
+        "html_report": "backstop_data/html_report",
   },
-  "report": ["browser"],
+"report": ["browser"],
   "engine": "puppeteer",
-  "engineOptions": {
-    "args": ["--no-sandbox"],
+    "engineOptions": {
+  "args": ["--no-sandbox"],
     "gotoParameters": { "waitUntil": ["load", "networkidle0"], timeout: 20000 },
-  },
-  "asyncCaptureLimit": 10,
+},
+"asyncCaptureLimit": 10,
   "asyncCompareLimit": 50,
-  "debug": false,
-  "debugWindow": false
+    "debug": false,
+      "debugWindow": false
 }

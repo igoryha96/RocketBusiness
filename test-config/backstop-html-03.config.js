@@ -1,27 +1,27 @@
 export default {
-  "id": "drink2go html-03",
-  "viewports": [
-    {
-      "label": "desktop",
-      "width": 1440,
-      "height": 800,
-    },
-    {
-      "label": "tablet",
-      "width": 768,
-      "height": 800,
-    },
-    {
-      "label": "mobile",
-      "width": 320,
-      "height": 800,
-    },
-  ],
-  "resembleOutputOptions": {
-    "ignoreAntialiasing": true,
-    "usePreciseMatching": true
+  "id": RocketBusinness html- 03",
+"viewports": [
+  {
+    "label": "desktop",
+    "width": 1440,
+    "height": 800,
   },
-  "onReadyScript": "onReady.js",
+  {
+    "label": "tablet",
+    "width": 768,
+    "height": 800,
+  },
+  {
+    "label": "mobile",
+    "width": 320,
+    "height": 800,
+  },
+],
+  "resembleOutputOptions": {
+  "ignoreAntialiasing": true,
+    "usePreciseMatching": true
+},
+"onReadyScript": "onReady.js",
   "scenarios": [
     {
       "label": "index links",
@@ -40,21 +40,21 @@ export default {
       requireSameDimensions: false,
     },
   ],
-  fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
-  "paths": {
-    "bitmaps_reference": "backstop_data/bitmaps_reference/html-03",
+    fileNameTemplate: '{configId}_{scenarioIndex}_{scenarioLabel}_{selectorIndex}__{viewportIndex}_{viewportLabel}',
+      "paths": {
+  "bitmaps_reference": "backstop_data/bitmaps_reference/html-03",
     "bitmaps_test": "backstop_data/bitmaps_test",
-    "engine_scripts": "engine_scripts",
-    "html_report": "backstop_data/html_report",
+      "engine_scripts": "engine_scripts",
+        "html_report": "backstop_data/html_report",
   },
-  "report": ["browser"],
+"report": ["browser"],
   "engine": "puppeteer",
-  "engineOptions": {
-    "args": ["--no-sandbox"],
+    "engineOptions": {
+  "args": ["--no-sandbox"],
     "gotoParameters": { "waitUntil": ["load", "networkidle0"], timeout: 20000 },
-  },
-  "asyncCaptureLimit": 10,
+},
+"asyncCaptureLimit": 10,
   "asyncCompareLimit": 50,
-  "debug": false,
-  "debugWindow": false
+    "debug": false,
+      "debugWindow": false
 }

@@ -1,5 +1,5 @@
 export default {
-  "id": "drink2go img",
+  "id": RocketBusinness img",
   "viewports": [
     {
       "label": "desktop",

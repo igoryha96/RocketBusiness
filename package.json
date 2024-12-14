@@ -73,6 +73,7 @@
     "w3c-html-validator": "1.8.1"
   },
   "dependencies": {
-    "embla-carousel": "^8.5.1"
+    "embla-carousel": "^8.5.1",
+    "swiper": "^11.1.15"
   }
 }

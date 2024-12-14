@@ -1,7 +1,7 @@
 const indexSections = ['header', 'main', 'hero', 'features', 'catalog', 'map', 'footer'];
 
 export default {
-  "id": "drink2go FF",
+  "id": RocketBusinness FF",
   "viewports": [
     {
       "label": "desktop",

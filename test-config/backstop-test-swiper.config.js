@@ -1,5 +1,5 @@
 export default {
-  "id": "drink2go swiper",
+  "id": RocketBusinness swiper",
   "viewports": [
     {
       "label": "desktop",

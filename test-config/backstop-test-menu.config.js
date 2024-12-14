@@ -1,5 +1,5 @@
 export default {
-  "id": "drink2go menu",
+  "id": RocketBusinness menu",
   "viewports": [
     {
       "label": "mobile",

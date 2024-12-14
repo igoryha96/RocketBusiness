@@ -1,6 +1,6 @@
 
 export default {
-  "id": "drink2go Logo",
+  "id": RocketBusinness Logo",
   "viewports": [
     {
       "label": "desktop",

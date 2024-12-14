@@ -1,13 +1,13 @@
 /* GLOBAL */
+@import "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css";
 
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 @import "./common/mixins.scss";
 
-@import "../vendor/embla.css";
-
 /* BLOCKS */
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/main-header";
 @import "./blocks/video-box.scss";
+@import "./blocks/swiper.scss";
