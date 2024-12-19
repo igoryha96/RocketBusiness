@@ -21,7 +21,5 @@ async function loadSwiper() {
   });
 }
 
-// Call the function to load the library
-loadSwiper();
 
 export { loadSwiper };

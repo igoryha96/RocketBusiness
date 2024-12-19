@@ -1,0 +1,13 @@
+iframe {
+  width: 1200;
+  height: 517px;
+
+  @media (max-width: $tablet) {
+    width: 784px;
+    height: 337px;
+  }
+  @media (max-width: $mob) {
+    width: 328px;
+    height: 204px;
+  }
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+
+  @media (max-width: $tablet) {
+    width: 1024px;
+  }
+
+  @media (max-width: $mob) {
+    width: 360px;
+    padding: 0 16px;
+  }
+}
