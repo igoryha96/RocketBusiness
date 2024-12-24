@@ -5,4 +5,5 @@ let swiper = new Swiper('.mySwiper', {
   },
   mousewheel: true,
   keyboard: true,
+  slidesPerView: 1.5,
 });

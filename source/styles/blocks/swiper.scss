@@ -2,6 +2,9 @@
   max-width: 328px;
   height: 422px;
 }
+.swiper-wrapper {
+  width: 1000px;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -12,4 +15,7 @@
 .swiper-slide img {
   width: 58%;
   object-fit: cover;
+}
+
+.swiper-pagination {
 }
