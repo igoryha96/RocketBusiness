@@ -1,6 +1,5 @@
-import { loadSwiper } from '../vendor/swiper';
-// Call the function to load the library
-loadSwiper();
+import { swiper } from '../vendor/swiper';
 
-//load swiper config
-import { swiper } from '../scripts/swiper-confg';
+// import { loadSwiper } from '../vendor/swiper';
+// Call the function to load the library
+// loadSwiper();

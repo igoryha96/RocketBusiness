@@ -1,0 +1,56 @@
+.big-cards {
+  width: 387px;
+  height: 328px;
+}
+
+.big-cards_card {
+  position: relative;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 328px;
+}
+
+.big-cards__container {
+}
+
+.big-cards__picture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.big-cards__pic {
+  border-radius: 5px;
+  display: block;
+  margin: 0;
+}
+
+.big-cards__title-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.big-cards__title {
+}
+
+.big-cards__like-box {
+}
+
+.big-cards__like {
+}
+
+.big-cards__watch {
+}
+
+.big-cards__wrap-price {
+}
+
+.big-cards__baner {
+}
+
+.big-cards__buttoon {
+}

@@ -1,4 +1,6 @@
 /* GLOBAL */
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 @import "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css";
 
 @import "./common/variables.scss";
@@ -10,6 +12,7 @@
 
 /* BLOCKS */
 
+@import "./blocks/page-body.scss";
 @import "./blocks/wrapper.scss";
 
 @import "./blocks/main-header.scss";
@@ -18,4 +21,20 @@
 
 @import "./blocks/video-box.scss";
 
+@import "./blocks/catalog.scss";
+@import "./blocks/big-cards.scss";
+@import "./blocks/title-card.scss";
+@import "./blocks/like-box.scss";
+@import "./blocks/like.scss";
+@import "./blocks/eye.scss";
+@import "./blocks/banner.scss";
+@import "./blocks/button.scss";
+@import "./blocks/middle-cards.scss";
+@import "./blocks/small-card.scss";
+
 @import "./blocks/swiper.scss";
+@import "./blocks/mySwiper.scss";
+@import "./blocks/swiper-wrapper.scss";
+@import "./blocks/swiper-slide.scss";
+@import "./blocks/small-card.scss";
+@import "./blocks/swiper-pagination.scss";

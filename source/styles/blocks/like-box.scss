@@ -1,0 +1,56 @@
+.like-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.like-box__like {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    mask-image: url("../../icons/desk_like.svg");
+    background-color: #ffffff;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: blue;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    background-color: blue;
+  }
+}
+.like-box__eye {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    mask-image: url("../../icons/desk_eye.svg");
+    background-color: #ffffff;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: blue;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    background-color: blue;
+  }
+}
