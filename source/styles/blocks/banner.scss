@@ -1,13 +1,32 @@
 .banner {
+  border-radius: 50px;
+  padding: 0 11px 0 11px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23px;
+  color: #ffffff;
+
+  align-self: flex-start;
 }
+
+.banner > * {
+  flex: 1 0 auto;
+}
+
 .banner--sail-day {
+  background: #18c576;
 }
 .banner--day-product {
+  background: #ffa726;
 }
 
 .banner--sale-sale {
+  background: #ff5bc6;
 }
 .banner--sail {
+  background: #39b0f4;
 }
 .banner--hit {
+  background: #ac59f1;
 }

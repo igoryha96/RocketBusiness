@@ -3,7 +3,7 @@
   height: 328px;
 }
 
-.big-cards_card {
+.big-cards__card {
   position: relative;
   padding: 12px;
   display: flex;
@@ -46,11 +46,31 @@
 .big-cards__watch {
 }
 
+// .big-cards__wrap-price
+
 .big-cards__wrap-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-cards__baner-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .big-cards__baner {
 }
 
-.big-cards__buttoon {
+.big-cards__wrapper-prise {
+  align-self: flex-end;
+  display: flex;
+}
+
+.big-cards__price {
+  margin-right: 8px;
+  align-self: center;
+}
+
+.big-cards__button {
 }
