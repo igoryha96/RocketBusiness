@@ -52,12 +52,17 @@
 .middle-cards__wrap-price {
 }
 
+.middle-cards__wrapper-price {
+  display: flex;
+}
+
 .middle-cards__baner {
 }
 
 .middle-cards__price {
   margin-right: 8px;
-  align-self: center;
+  align-self: flex-end;
 }
 .middle-cards__buttoon {
+  align-self: flex-end;
 }
