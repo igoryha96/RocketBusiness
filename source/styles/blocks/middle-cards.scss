@@ -1,67 +1,63 @@
 .middle-cards {
+  width: 387px;
+  gap: 154px;
+}
 
-  // .middle-cards_card
+.middle-cards__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  &_card {
-  }
+.middle-cards__card {
+  position: relative;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 154px;
+}
 
-  // .middle-cards__container
+.middle-cards__picture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
 
-  &__container {
-  }
+.middle-cards__pic {
+  border-radius: 5px;
+  display: block;
+  margin: 0;
+}
 
-  // .middle-cards__card
+.middle-cards__title-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
 
-  &__card {
-  }
+.middle-cards__title {
+}
 
-  // .middle-cards__picture
+.middle-cards__like-box {
+}
 
-  &__picture {
-  }
+.middle-cards__like {
+}
 
-  // .middle-cards__pic
+.middle-cards__watch {
+}
 
-  &__pic {
-  }
+.middle-cards__wrap-price {
+}
 
-  // .middle-cards__title-wrap
+.middle-cards__baner {
+}
 
-  &__title-wrap {
-  }
-
-  // .middle-cards__title
-
-  &__title {
-  }
-
-  // .middle-cards__like-box
-
-  &__like-box {
-  }
-
-  // .middle-cards__like
-
-  &__like {
-  }
-
-  // .middle-cards__watch
-
-  &__watch {
-  }
-
-  // .middle-cards__wrap-price
-
-  &__wrap-price {
-  }
-
-  // .middle-cards__baner
-
-  &__baner {
-  }
-
-  // .middle-cards__buttoon
-
-  &__buttoon {
-  }
+.middle-cards__price {
+  margin-right: 8px;
+  align-self: center;
+}
+.middle-cards__buttoon {
 }
