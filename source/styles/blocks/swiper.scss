@@ -13,3 +13,9 @@
   width: 58%;
   object-fit: cover;
 }
+
+.swiper-pagination {
+  @media (min-width: 361px) {
+    display: none;
+  }
+}
