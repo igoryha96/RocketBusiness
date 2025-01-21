@@ -1,13 +1,18 @@
 .small-card {
+  width: 387px;
 }
 
 .small-card__container {
 }
 
 .small-card__card {
+  position: relative;
+  width: 184px;
+  height: 328px;
 }
 
 .small-card__wrap-banner {
+  margin-bottom: 135px;
 }
 
 .small-card__banner-container {
@@ -26,12 +31,17 @@
 }
 
 .small-card__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .small-card__pic {
 }
 
 .small-card__title {
+  color: #444444;
 }
 
 .small-card__prise {

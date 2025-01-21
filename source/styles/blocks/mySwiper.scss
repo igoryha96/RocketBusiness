@@ -1,24 +1,5 @@
-.mySwiper {
-}
-
-.mySwiper {
-  width: 70%;
-}
-.mySwiper img {
-  width: 100%;
-  vertical-align: bottom;
-}
-
-/* Styles for when the slider is disabled */
-.mySwiper.-non-slider .swiper-wrapper {
-  transform: inherit !important;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-.mySwiper.-non-slider .swiper-slide {
-  width: inherit !important;
-}
-.mySwiper.-non-slider .swiper-slide-duplicate {
-  display: none;
+.myswiper {
+  width: 387px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }

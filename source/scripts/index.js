@@ -1,6 +1,4 @@
-import { swiper } from '../vendor/swiper';
-
-// import { loadSwiper } from '../vendor/swiper';
-// Call the function to load the library
-// loadSwiper();
-console.log('Hello world');
+// import { swiper } from '../vendor/swiper';
+import { mobSlider } from '../vendor/swiper';
+// import { innitSlider } from '../vendor/swiper';
+// import { shownSwiper } from '../scripts/showswiper';

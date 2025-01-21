@@ -1,6 +1,6 @@
 .swiper {
-  max-width: 328px;
-  height: 422px;
+  max-width: 387px;
+  height: 328px;
 }
 .swiper-slide {
   text-align: center;
@@ -15,7 +15,5 @@
 }
 
 .swiper-pagination {
-  @media (min-width: 361px) {
-    display: none;
-  }
+
 }
