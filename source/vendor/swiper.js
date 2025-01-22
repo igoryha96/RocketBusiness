@@ -1,43 +1,40 @@
+let swiper; // Переменная для хранения экземпляра Swiper
+
 function initSlider() {
-  const swiper = new Swiper('.swiper', {
-    spaceBetween: 16,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    mousewheel: true,
-    keyboard: true,
-    slidesPerView: 1,
-    // on: {
-    //   resize: function enableOnlyMobile(swiper) {
-    //     // Disable the slider when the window width is less than or equal to 360
-    //     if (window.innerWidth > 361) {
-    //       swiper.disable();
-    //     } else {
-    //       swiper.enable()
-    //     }
-    //   },
-    // }
-  });
-}
-
-// innitSlider();
-
-// export { swiper };
-
-
-const mobSlider = function () {
-  const width = innerWidth;
-  if (361 > width) {
-    console.log('Должно работать');
-    initSlider();
+  // Проверяем, если swiper уже инициализирован, не инициализируем его снова
+  if (!swiper) {
+    swiper = new Swiper('.swiper', {
+      spaceBetween: 16,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: false, // Делаем пагинацию кликабельной
+      },
+      mousewheel: true,
+      keyboard: true,
+      slidesPerView: 1,
+    });
   } else {
-    console.log('Выкл');
-
+    swiper.disable();
   }
 }
 
-mobSlider();
+function handleResize() {
+  // Проверяем ширину экрана
+  if (window.innerWidth < 361) {
+    initSlider(); // Инициализируем слайдер, если ширина меньше 361
+  } else {
+    // Если ширина больше 361, уничтожаем слайдер, если он был инициализирован
+    if (swiper) {
+      swiper.destroy(); // Уничтожаем экземпляр Swiper
+      swiper = null; // Сбрасываем переменную
+    }
+  }
+}
 
+// // Вызываем handleResize при загрузке страницы
+// handleResize();
 
-export { mobSlider };
-// export { innitSlider }
+// // Добавляем обработчик события resize
+// window.addEventListener('resize', handleResize);
+
+export { handleResize };
