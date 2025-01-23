@@ -1,5 +1,4 @@
 .small-card {
-  width: 387px;
 }
 
 .small-card__container {
@@ -9,16 +8,32 @@
   position: relative;
   width: 184px;
   height: 328px;
+  padding: 10px 12px 12px 12px;
 }
 
 .small-card__wrap-banner {
   margin-bottom: 135px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .small-card__banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .small-card__banner {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.small-card__like-container {
 }
 
 .small-card__like-box {
@@ -38,11 +53,25 @@
 }
 
 .small-card__pic {
+  border-radius: 5px;
 }
 
 .small-card__title {
   color: #444444;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .small-card__prise {
+  font-weight: 700;
+  font-size: 20px;
+
+  line-height: 20px;
+  text-align: center;
+  color: #444;
+  margin: 0;
+  margin-bottom: 8px;
 }
