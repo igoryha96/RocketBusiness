@@ -6,15 +6,20 @@
 
 .small-card__card {
   position: relative;
+  z-index: -2;
+  border-radius: 5px;
+  overflow: hidden;
   width: 184px;
   height: 328px;
   padding: 10px 12px 12px 12px;
+  background-color: #ffffff;
 }
 
 .small-card__wrap-banner {
   margin-bottom: 135px;
   display: flex;
   justify-content: space-between;
+  min-height: 50px;
 }
 
 .small-card__banner-container {
@@ -53,7 +58,6 @@
 }
 
 .small-card__pic {
-  border-radius: 5px;
 }
 
 .small-card__title {
@@ -74,4 +78,9 @@
   color: #444;
   margin: 0;
   margin-bottom: 8px;
+}
+
+.small-cards__buttoon {
+  display: block;
+  margin: 0 auto;
 }

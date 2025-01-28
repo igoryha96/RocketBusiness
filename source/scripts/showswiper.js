@@ -5,7 +5,10 @@ let swiperSlide = document.querySelectorAll('.swiper-slide');
 let shownSwiper = function () {
   if (window.innerWidth > 360) {
     swiper.classList.remove('swiper');
+    swiper.classList.add('myswiper');
+
     swiperWrap.classList.remove('swiper-wrapper');
+    swiperWrap.classList.add('myswiper__wrapper');
 
     swiperSlide.forEach((element) => {
       element.classList.remove('swiper-slide');
@@ -29,6 +32,4 @@ let shownSwiper = function () {
   }
 };
 
-shownSwiper();
-
-window.addEventListener('resize', shownSwiper);
+export { shownSwiper };

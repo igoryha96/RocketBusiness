@@ -13,8 +13,6 @@ function initSlider() {
       keyboard: true,
       slidesPerView: 1,
     });
-  } else {
-    swiper.disable();
   }
 }
 

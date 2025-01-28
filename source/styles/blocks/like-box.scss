@@ -18,6 +18,8 @@
     position: absolute;
     mask-image: url("../../icons/desk_like.svg");
     background-color: #ffffff;
+    top: 0;
+    left: 0;
   }
 
   &:hover::before,
@@ -44,6 +46,8 @@
     position: absolute;
     mask-image: url("../../icons/desk_eye.svg");
     background-color: #ffffff;
+    top: 0;
+    left: 0;
   }
 
   &:hover::before,
