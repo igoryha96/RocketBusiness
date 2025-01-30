@@ -6,13 +6,21 @@
 
 .small-card__card {
   position: relative;
-  z-index: -2;
+  z-index: 1;
   border-radius: 5px;
   overflow: hidden;
   width: 184px;
   height: 328px;
   padding: 10px 12px 12px 12px;
   background-color: #ffffff;
+
+  @include mediaTab {
+    width: 181px;
+  }
+  @include mediaMob {
+    width: 230px;
+    min-height: 410px;
+  }
 }
 
 .small-card__wrap-banner {
@@ -20,6 +28,11 @@
   display: flex;
   justify-content: space-between;
   min-height: 50px;
+
+  @include mediaMob {
+    margin-bottom: 173px;
+    min-height: 59px;
+  }
 }
 
 .small-card__banner-container {
@@ -29,13 +42,15 @@
 }
 
 .small-card__banner {
-  padding-left: 10px;
-  padding-right: 10px;
-
   font-weight: 600;
   font-size: 12px;
   line-height: 23px;
   color: #fff;
+
+  @include mediaMob {
+    font-size: 15px;
+    line-height: 27px;
+  }
 }
 
 .small-card__like-container {
@@ -58,6 +73,9 @@
 }
 
 .small-card__pic {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .small-card__title {
@@ -67,6 +85,14 @@
   line-height: 17px;
   margin: 0;
   margin-bottom: 27px;
+
+  @include mediaMob {
+    font-style: 17px;
+    line-height: 21px;
+    margin-bottom: 33px;
+
+    min-height: 42px;
+  }
 }
 
 .small-card__prise {
@@ -78,9 +104,22 @@
   color: #444;
   margin: 0;
   margin-bottom: 8px;
+
+  @include mediaMob {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
 }
 
 .small-cards__buttoon {
   display: block;
   margin: 0 auto;
+
+  @include mediaMob {
+    font-size: 15px;
+    line-height: 25px;
+    padding: 7px 25px;
+    width: 200px;
+    min-height: 40px;
+  }
 }

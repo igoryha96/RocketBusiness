@@ -1,6 +1,11 @@
 .swiper {
-  max-width: 387px;
-  height: 328px;
+  max-width: 328px;
+  min-height: 506px;
+}
+
+.swiper-wrapper {
+  padding-left: 49px;
+  min-height: 506px;
 }
 .swiper-slide {
   text-align: center;
@@ -8,11 +13,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  min-height: 410px;
 }
 .swiper-slide img {
-  width: 58%;
+  width: 230px;
   object-fit: cover;
 }
 
 .swiper-pagination {
+  @media (min-width: 361) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #1e1e1e !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 48px !important;
 }

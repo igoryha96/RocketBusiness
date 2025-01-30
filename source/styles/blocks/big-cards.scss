@@ -1,6 +1,13 @@
 .big-cards {
   width: 387px;
   height: 328px;
+
+  @include mediaTab {
+    width: 382px;
+  }
+  @include mediaMob {
+    width: 328px;
+  }
 }
 
 .big-cards__card {

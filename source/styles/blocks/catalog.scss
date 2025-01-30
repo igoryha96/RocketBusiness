@@ -11,16 +11,45 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+  @media (max-width: $tablet) {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: $mob) {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
 }
 
 .catalog__big-cards {
+  @media (max-width: $tablet) {
+    order: 1;
+  }
 }
 
 .catalog__card {
 }
 
 .catalog__middle-cards {
+  @media (max-width: $tablet) {
+    order: 3;
+  }
+  @media (max-width: $mob) {
+    order: 2;
+  }
 }
 
 .catalog__small-cards {
+  @media (max-width: $tablet) {
+    order: 2;
+  }
 }

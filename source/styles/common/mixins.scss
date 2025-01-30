@@ -25,18 +25,18 @@
 }
 
 @mixin mediaMob {
-  @media (min-width: 360px) {
+  @media (max-width: 360px) {
     @content;
   }
 }
 @mixin mediaTab {
-  @media (min-width: 1024px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin mediaDesk {
-  @media (min-width: 1440px) {
+  @media (max-width: 1440px) {
     @content;
   }
 }

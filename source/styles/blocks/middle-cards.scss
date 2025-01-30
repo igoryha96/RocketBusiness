@@ -1,5 +1,4 @@
 .middle-cards {
-  width: 387px;
   gap: 154px;
 }
 
@@ -7,6 +6,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @include mediaTab {
+    flex-direction: row;
+    gap: 20px;
+  }
+  @include mediaMob {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .middle-cards__card {
@@ -15,6 +23,15 @@
   display: flex;
   flex-direction: column;
   height: 154px;
+  width: 387px;
+
+  @include mediaTab {
+    width: 382px;
+  }
+  @include mediaMob {
+    width: 328px;
+    min-height: 175px;
+  }
 }
 
 .middle-cards__picture {
