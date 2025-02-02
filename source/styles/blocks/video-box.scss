@@ -15,20 +15,6 @@
 .video-box__prev {
 }
 
-// .video-box__button-img
-
-.video-box__prev-img {
-}
-
-.video-box__prev-pic {
-}
-
-// .video-box__button-pic
-
-.video-box__button-pic {
-  margin: 0 auto;
-}
-
 // .video-box__button-play
 
 .video-box__button-play {
@@ -38,4 +24,35 @@
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 193px;
+  background: url("../../icons/desk_button-play1.svg");
+}
+
+.video-box__text {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  background-color: #18c576;
+  padding: 8px 16px 8px 16px;
+  margin: 0 auto;
+  height: 33px;
+  display: flex;
+  width: 169px;
+  gap: 8px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../../icons/desk_play.svg");
+    align-self: flex-end;
+  }
 }
