@@ -12,6 +12,7 @@
 
 /* BLOCKS */
 
+@import "./blocks/content.scss";
 @import "./blocks/page-body.scss";
 @import "./blocks/wrapper.scss";
 
@@ -41,3 +42,5 @@
 @import "./blocks/swiper-wrapper.scss";
 @import "./blocks/swiper-slide.scss";
 @import "./blocks/small-card.scss";
+
+@import "./blocks/modal.scss";

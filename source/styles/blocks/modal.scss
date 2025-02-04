@@ -1,0 +1,59 @@
+.modal {
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal__wrap {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  padding: 20px;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+}
+.modal__title-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 32px;
+  h2 {
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    line-height: 19px;
+    color: #444;
+  }
+}
+
+.modal__close {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../icons/desk_modal-close.svg");
+    background-color: #444444;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.modal-form {
+}
+.modal__submit-wrap {
+  display: flex;
+}
