@@ -362,17 +362,17 @@
 
         <div class="modal-form">
           <fieldset>
-            <input type="text" name="name">
-
-            <input type="tel" name="tel">
+            <input class="modal__name" type="text" name="name" placeholder="Ваше имя">
+            <span class="modal__erorr">Поле не заполнено</span>
+            <input class="modal__phone" type="tel" name="tel" placeholder="Номер телефона*">
 
             <div class="modal__submit-wrap">
-              <label for="personal">
-                <input type="checkbox" name="personal">
-                <span>Я соглашаюсь на обработку персональных данных</span>
-              </label>
+              <div class="modal__personal-wrap">
+                <input id="personal" type="checkbox" name="personal">
+                <label class="modal__submit-text" for="personal">Я соглашаюсь на обработку персональных данных</label>
+              </div>
 
-              <button type="submit">
+              <button class="modal__bt-submit" type="submit">
                 Отправить
               </button>
             </div>

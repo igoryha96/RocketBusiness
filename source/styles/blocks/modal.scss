@@ -53,7 +53,61 @@
   }
 }
 .modal-form {
+  input {
+    display: block;
+  }
+}
+
+.modal__name,
+.modal__phone {
+  font-size: 12px;
+  color: #444;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 10px 12px;
+  min-width: 363px;
+}
+
+.modal__erorr {
+  font-size: 8px;
+  color: #e44b4b;
+  font-weight: 500;
+  margin: 0;
+  line-height: 10px;
 }
 .modal__submit-wrap {
   display: flex;
+  justify-content: space-between;
+  input {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.modal__personal-wrap {
+  display: flex;
+  input {
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    width: 8px;
+    height: 8px;
+    align-self: center;
+  }
+}
+
+.modal__submit-text {
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 10px;
+  color: #444;
+  align-self: center;
+}
+
+.modal__bt-submit {
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fefefe;
+  background-color: #18c576;
+  border-radius: 5px;
 }
