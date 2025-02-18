@@ -354,30 +354,32 @@
       <div class="modal__wrap">
 
         <div class="modal__title-wrap">
-          <h2>Оставьте заявку</h2>
+          <label>Оставьте заявку</label>
           <button class="modal__close" type="button">
             <span class="visually-hidden">Заккрыть форму заполнения данных</span>
           </button>
         </div>
 
-        <div class="modal-form">
+        <form class="modal-form" method="post" action="">
           <fieldset>
-            <input class="modal__name" type="text" name="name" placeholder="Ваше имя">
+            <input class="modal__name" type="text" name="name" placeholder="Ваше имя" pattern="^[a-zA-Zа-яА-ЯЁё \-]+$"
+              oninvalid="setCustomValidity('Используйте символы русского и латинского алфавита')" required>
             <span class="modal__erorr">Поле не заполнено</span>
-            <input class="modal__phone" type="tel" name="tel" placeholder="Номер телефона*">
+            <input class="modal__phone" type="tel" name="tel" placeholder="Номер телефона*" pattern="^[0123456789 +]+$"
+              oninvalid="setCustomValidity('Используйте только цыфры')" required>
 
             <div class="modal__submit-wrap">
               <div class="modal__personal-wrap">
                 <input id="personal" type="checkbox" name="personal">
                 <label class="modal__submit-text" for="personal">Я соглашаюсь на обработку персональных данных</label>
               </div>
-
               <button class="modal__bt-submit" type="submit">
                 Отправить
               </button>
             </div>
+
           </fieldset>
-        </div>
+        </form>
       </div>
     </div>
 
