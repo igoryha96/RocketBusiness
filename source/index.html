@@ -354,23 +354,27 @@
       <div class="modal__wrap">
 
         <div class="modal__title-wrap">
-          <label>Оставьте заявку</label>
+          <label for="name">Оставьте заявку</label>
           <button class="modal__close" type="button">
-            <span class="visually-hidden">Заккрыть форму заполнения данных</span>
+            <span class="visually-hidden">Закрыть форму заполнения данных</span>
           </button>
         </div>
 
-        <form class="modal-form" method="post" action="">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
-            <input class="modal__name" type="text" name="name" placeholder="Ваше имя" pattern="^[a-zA-Zа-яА-ЯЁё \-]+$"
+            <legend class="visually-hidden"></legend>
+            <input class="modal__name" type="text" id="name" name="name" placeholder="Ваше имя"
+              pattern="^[a-zA-Zа-яА-ЯЁё \-]+$"
               oninvalid="setCustomValidity('Используйте символы русского и латинского алфавита')" required>
             <span class="modal__erorr">Поле не заполнено</span>
-            <input class="modal__phone" type="tel" name="tel" placeholder="Номер телефона*" pattern="^[0123456789 +]+$"
-              oninvalid="setCustomValidity('Используйте только цыфры')" required>
+            <label>
+              <input class="modal__phone" type="tel" id="tel" name="tel" placeholder="Номер телефона*"
+                pattern="^[0123456789 +]+$" oninvalid="setCustomValidity('Используйте только цифры')" required>
+            </label>
 
             <div class="modal__submit-wrap">
               <div class="modal__personal-wrap">
-                <input id="personal" type="checkbox" name="personal">
+                <input id="personal" type="checkbox" name="personal" required>
                 <label class="modal__submit-text" for="personal">Я соглашаюсь на обработку персональных данных</label>
               </div>
               <button class="modal__bt-submit" type="submit">
